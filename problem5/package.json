@@ -1,0 +1,34 @@
+{
+  "name": "problem5",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/main.js",
+    "dev": "nodemon -w . -w .env -r dotenv/config main.ts "
+  },
+  "keywords": [
+    "TypeScript",
+    "Express",
+    "LokiJS"
+  ],
+  "author": "Nghviet",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/lokijs": "^1.5.14",
+    "@types/node": "^22.12.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "lokijs": "^1.5.12"
+  }
+}
