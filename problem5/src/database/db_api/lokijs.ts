@@ -18,7 +18,7 @@ export class ILokiFeature implements IFeatureQuery {
             throw new Error("Unsupport QueryValueType for LokiJS DB, expecting STRING or NUMBER type value");
         }
 
-        if(this.variable_name == "$document_id") this.variable_name = "$loki"; // LokiJS uid variable
+        if(this.variable_name == "$document_id") this.variable_name = "$loki"; // LokiJS document id variable
 
         if(this.query_value_type == QueryValueType.STRING) {
             switch(this.comparision_type) {

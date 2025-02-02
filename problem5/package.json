@@ -16,7 +16,7 @@
   "author": "Nghviet",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/lokijs": "^1.5.14",
@@ -26,9 +26,7 @@
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
-  },
-  "dependencies": {
+    "typescript": "^5.7.3",
     "lokijs": "^1.5.12"
   }
 }

@@ -8,6 +8,10 @@ export class GlobalVariable {
     static getDatabase() {
         if(this._database_instance) 
             return this._database_instance;
+
+        if(!process.env.DB_ENGINE) 
+            process.env.DB_ENGINE = "LokiJS";
+
         switch(process.env.DB_ENGINE) {
             case "LokiJS":
                 this._database_instance = new LokiJSDBInterface();
