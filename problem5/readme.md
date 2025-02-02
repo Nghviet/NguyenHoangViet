@@ -33,7 +33,7 @@
 This is my solution on 99 Team Coding Challenge problem 5, combining my understanding and experience in back-end development and JavaScript with creativity, overthinking and overengineering thanks to the openness and the lack of mandate requirements for the software as long as it is not painful for reviewer to examine and grade the solution.
 
 
-While it is somewhat completed, there are still points of improvement as well as the lacking support for more conventional database engine such as MySQL or MongoDB but the challenge did not list the available database engines so I opted for LokiJS so that neither I nor the judges need to bother about installing and config the database connection while ensure the compatibility with other engine through an adapter `DatabaseInterface`.
+While it is somewhat completed in the direction of my vision, there are still points of improvement as well as the lacking support for more conventional database engine such as MySQL or MongoDB but the challenge did not list the available database engines so I opted for LokiJS so that neither I nor the judges need to bother about installing and config the database connection while ensure the compatibility with other engine through an adapter `DatabaseInterface`.
 
 <!-- GETTING STARTED -->
 ## Getting Started

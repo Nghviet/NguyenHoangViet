@@ -18,7 +18,7 @@ router.get('/', (req: Request, res: Response) => {
         e: { variable_name: string; query_value: string; query_value_type: string; comparision_type: string; }) => 
             database.creating_feature_query(e.variable_name, e.query_value, e.query_value_type, e.comparision_type));
 
-    res.status(201).send({
+    res.status(200).send({
         "results" : database.query_and_cast<UserReviewDataModel>(queries)
     });
 }) 
@@ -31,7 +31,7 @@ router.get('/:document_id', (req: Request<{ document_id: string}>,res: Response)
 
     var data = database.query_and_cast<UserReviewDataModel>(queries);
     if(data.length != 1) res.status(404).send("No matching document");
-    else res.status(201).send(data[0]);
+    else res.status(200).send(data[0]);
 })
 
 router.post('/', (req: Request, res: Response) => {
